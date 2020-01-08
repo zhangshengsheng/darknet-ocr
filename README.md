@@ -2,16 +2,22 @@
 
 # 实现功能
 - [x]  CPU版本最短边608时，检测速度小于1秒；
+- [x]  支持GPU
 - [ ]  支持darknet直接训练CTPN（整理中）；
 - [ ]  支持darknet直接训练CNN+CTC ocr（整理中）;
  
  
 ## 下载text.weights模型文件   
 模型文件地址:
-* [baidu pan](https://pan.baidu.com/s/1qyE_uCyMJCQmHQemn3NqEQ)
+* http://www.chineseocr.com:9990/static/models/darknet-ocr/text.weights 
+
 
 拷贝text.weights文件到models目录
-   
+
+## 编译对GPU的支持  
+`
+sh make-gpu.sh
+`
 
 ## web服务启动(支持文件上传及URL图像)
 ``` Bash

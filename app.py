@@ -78,7 +78,6 @@ class TEXT:
                 billModel     = data.get('billModel',"")
                 iscut         = data.get('iscut',False)##是否多票据识别
                 isclass       = data.get('isclass',False)##是否自动进行票据分类
-                
                 if 'uuid' is not None and (url is not None or imgString is not None):
                     res = job(uuid,url,imgString,iscut,isclass,billModel,ip)
                     post.update(res)
